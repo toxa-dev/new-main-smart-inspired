@@ -168,6 +168,10 @@ body {
 }
 
 @media (min-width: 500px) and (orientation: landscape) {
+  .nav-list {
+    grid-template-columns: repeat(3, 160px);
+  }
+
   .header {
     padding: 2rem 0.7rem;
   }
