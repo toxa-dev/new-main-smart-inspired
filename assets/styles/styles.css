@@ -161,6 +161,12 @@ body {
   }
 }
 
+@media (min-width: 600px) and (orientation: landscape) {
+  .nav-list {
+    grid-template-columns: repeat(3, 160px);
+  }
+}
+
 @media (min-width: 770px) {
   .nav-list {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -168,10 +174,6 @@ body {
 }
 
 @media (min-width: 500px) and (orientation: landscape) {
-  .nav-list {
-    grid-template-columns: repeat(3, 160px);
-  }
-
   .header {
     padding: 2rem 0.7rem;
   }
