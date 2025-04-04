@@ -141,6 +141,12 @@ body {
   opacity: 0.8;
 }
 
+.page,
+.header,
+.footer {
+  border: 1px dashed #ffffff38;
+}
+
 /* Responsive Adjustments */
 
 @media (min-width: 400px) {
