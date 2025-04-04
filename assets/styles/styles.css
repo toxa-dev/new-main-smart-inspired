@@ -166,3 +166,13 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
+
+@media (min-width: 500px) and (orientation: landscape) {
+  .header {
+    padding: 2rem 0.7rem;
+  }
+
+  .navigation {
+    margin-top: 1rem;
+  }
+}
