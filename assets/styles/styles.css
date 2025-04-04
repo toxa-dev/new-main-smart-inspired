@@ -143,12 +143,6 @@ body {
 
 /* Responsive Adjustments */
 
-@media (min-width: 600px) {
-  .header {
-    padding: 3rem 0.7rem;
-  }
-}
-
 @media (min-width: 400px) {
   .nav-list {
     gap: 1.5rem;
@@ -165,7 +159,14 @@ body {
   }
 }
 
-@media (min-width: 500px) and (orientation: landscape) {
+@media (min-width: 600px) {
+  .header {
+    padding: 3rem 0.7rem;
+  }
+}
+
+/*
+@media (min-height: 500px) and (orientation: landscape) {
   .header {
     padding: 2rem 0.7rem;
   }
@@ -174,3 +175,5 @@ body {
     margin-top: 1rem;
   }
 }
+
+*/
