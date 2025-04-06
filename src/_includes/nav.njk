@@ -1,0 +1,19 @@
+<nav class="navigation {% if page.url !== '/' %}sub{% endif %}">
+  <ul class="nav-list">
+    {% for item in navigation.items %} {# Skip "Home" if current page is "/" #}
+    {% if not (page.url === "/" and item.url === "/") %}
+    <li
+      class="nav-list__item {% if page.url === item.url %} active {% endif %}"
+    >
+      <a href="{{ item.url }}" class="nav-list__link">
+        <img
+          src="{{ item.icon }}"
+          alt="{{ item.alt }}"
+          class="nav-list__icon"
+        />
+        <span class="nav-list__text">{{ item.text }}</span>
+      </a>
+    </li>
+    {% endif %} {% endfor %}
+  </ul>
+</nav>

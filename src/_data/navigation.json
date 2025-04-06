@@ -1,0 +1,47 @@
+{
+  "items": [
+    {
+      "url": "/",
+      "icon": "/assets/img/menu-items/home.svg",
+      "alt": "Projects icon",
+      "text": "Home"
+    },
+    {
+      "url": "/pages/about/",
+      "icon": "/assets/img/menu-items/about-me.svg",
+      "alt": "About me icon",
+      "text": "About Me"
+    },
+    {
+      "url": "/pages/projects/",
+      "icon": "/assets/img/menu-items/projects.svg",
+      "alt": "Projects icon",
+      "text": "Projects"
+    },
+
+    {
+      "url": "/pages/skills/",
+      "icon": "/assets/img/menu-items/skills.svg",
+      "alt": "Skills icon",
+      "text": "Skills"
+    },
+    {
+      "url": "/pages/resume/",
+      "icon": "/assets/img/menu-items/resume.svg",
+      "alt": "Resume icon",
+      "text": "Resume"
+    },
+    {
+      "url": "/pages/socials/",
+      "icon": "/assets/img/menu-items/socials.svg",
+      "alt": "Social media icon",
+      "text": "Socials"
+    },
+    {
+      "url": "/pages/contact/",
+      "alt": "Contact me icon",
+      "icon": "/assets/img/menu-items/contact-me.svg",
+      "text": "Contact Me"
+    }
+  ]
+}

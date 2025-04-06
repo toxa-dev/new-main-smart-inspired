@@ -1,0 +1,28 @@
+{
+  "name": "smartphone-inspi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toxa-dev/new-main-smart-inspired.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toxa-dev/new-main-smart-inspired/issues"
+  },
+  "homepage": "https://github.com/toxa-dev/new-main-smart-inspired#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4"
+  },
+  "description": ""
+}

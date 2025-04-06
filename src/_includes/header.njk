@@ -1,0 +1,9 @@
+<header class="header">
+  {% if page.url !== '/' %} {% include "nav.njk" %} {% endif %}
+
+  <h1 class="header__title">
+    {% if header.prefix %}{{ header.prefix }} {% endif %}<br />
+    {% if page.url === '/' %}
+    <span class="header__subtitle">Web Developer</span> {% endif %}
+  </h1>
+</header>
