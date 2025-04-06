@@ -1,8 +1,6 @@
-name: Deploy Eleventy to GitHub Pages
-
 on:
   push:
-    branches: [main] # or your default branch
+    branches: [main] # Change to your source branch name
 
 jobs:
   build-deploy:
@@ -20,11 +18,14 @@ jobs:
         run: npm install
 
       - name: Build the site
-        run: npm run build
+        run: |
+          npm run build
+          touch ./_site/.nojekyll  # Ensure this exists
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
+          keep_files: false # Clean old files on deploy
