@@ -8,7 +8,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/", // Must match your repo name!
+    pathPrefix: "/new-main-smart-inspired/", // Must match your repo name!
     dir: {
       input: "src",
       output: "./_site",
