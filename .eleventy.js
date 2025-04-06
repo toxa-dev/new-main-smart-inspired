@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/", // Must match your repo name!
     dir: {
       input: "src",
       output: "./_site",
