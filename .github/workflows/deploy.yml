@@ -2,11 +2,14 @@ name: Deploy Eleventy to GitHub Pages
 
 on:
   push:
-    branches: [main] # or your default branch
+    branches: [main] # Change if your source branch is different
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write # Critical new permission
+      id-token: write # Needed for Actions auth
 
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +23,11 @@ jobs:
         run: npm install
 
       - name: Build the site
-        run: npm run build
+        run: |
+          npm run build
+          # Ensure these essential files exist:
+          touch ./_site/.nojekyll
+          echo "Your domain" > ./_site/CNAME  # Only if using custom domain
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
@@ -28,3 +35,6 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
+          # Force clean deployment:
+          force_orphan: true
+          keep_files: false
